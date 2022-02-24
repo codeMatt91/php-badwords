@@ -11,10 +11,12 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 
 
 $title='La mia prima applicazione PHP';
-$paragraph='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minus deleniti enim possimus ipsam animi. Debitis neque quae animi fuga ipsa eligendi eveniet fugit, sit accusamus accusantium veniam asperiores! Adipisci?';
+$paragraph='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minus deleniti enim possimus ipsam animi. Debitis neque quae animi fuga ipsa eligendi eveniet fugit, sit accusamus accusantium veniam asperiores! Adipisci? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minus deleniti enim possimus ipsam animi. Debitis neque quae animi fuga ipsa eligendi eveniet fugit, sit accusamus accusantium veniam asperiores! Adipisci?';
 
 $name=$_GET['name'];
 $last_name=$_GET['lastname'];
+
+$censured=$_GET['censured'];
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +34,9 @@ $last_name=$_GET['lastname'];
    <p>il mio titolo e lungo <?php echo strlen($paragraph)?> lettere</p>
    
    <div>Questo lavoro e stato realizzato da <?php echo $name . $last_name?></div>
+
+   <div><?php echo str_replace('ipsa', $censured,$paragraph)?></div>
+
    </div>
 </body>
 </html> 
