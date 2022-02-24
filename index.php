@@ -37,6 +37,14 @@ $censured=$_GET['censured'];
 
    <div><?php echo str_replace('ipsa', $censured,$paragraph)?></div>
 
+   <div class="my-5">
+   <form action="http://localhost:8888/php-badwords/" method="get">
+      <label for="word">inserisci la parola con cui vuoi censurare</label>
+      <input id="word" type="text" name="censured">
+      <button type="submit">INVIA</button>
+   </form>
+   </div>
+
    </div>
 </body>
 </html> 
