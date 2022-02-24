@@ -11,8 +11,9 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 
 
 $title='La mia prima applicazione PHP';
+$paragraph='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minus deleniti enim possimus ipsam animi. Debitis neque quae animi fuga ipsa eligendi eveniet fugit, sit accusamus accusantium veniam asperiores! Adipisci?'
 
-
+$name=$_GET['name'];
 
 ?>
 
@@ -27,7 +28,10 @@ $title='La mia prima applicazione PHP';
 <body>
    <div class="d-flex flex-column text-center">
    <h1><?php echo $title?></h1>
-   <p>il mio titolo e lungo <?php echo strlen($title)?> lettere</p>
+   <p><?php echo $paragraph?></p>
+   <p>il mio titolo e lungo <?php echo strlen($paragraph)?> lettere</p>
+   
+   <div>Questo lavoro e stato realizzato da <?php echo $name?></div>
    </div>
 </body>
-</html>              
+</html> 
