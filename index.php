@@ -25,8 +25,9 @@ $title='La mia prima applicazione PHP';
    <title>Document</title>
 </head>
 <body>
-   <div class="d-flex justify-content-center">
+   <div class="d-flex flex-column text-center">
    <h1><?php echo $title?></h1>
+   <p>il mio titolo e lungo <?php echo strlen($title)?> lettere</p>
    </div>
 </body>
 </html>              
