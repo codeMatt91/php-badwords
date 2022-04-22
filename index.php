@@ -37,7 +37,9 @@ $censured = $_GET['censured'];
 
         <div>Questo lavoro e stato realizzato da <Strong><?php echo "$name $last_name"; ?></Strong></div>
 
-        <div><?php echo str_replace('ipsa', $censured, $paragraph); ?></div>
+        <div><?php echo $review = str_replace('ipsa', $censured, $paragraph); ?></div>
+
+        <p class="my-3">il mio titolo e lungo <?php echo strlen($review); ?> lettere</p>
 
         <div class="my-5">
 
